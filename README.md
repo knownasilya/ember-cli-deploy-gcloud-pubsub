@@ -45,6 +45,26 @@ This will create a topic in PubSub which will be used for the subscription.
 
 3. Create a subscription for the topic
 
+### Use
+
+```sh
+ember deploy <target> --activate
+```
+
+Or you can activate after the fact
+
+```sh
+ember deploy:activate <target> --revision=<revision>
+```
+
+### Subscription Data
+
+The subscription data is a stringified JSON object that contains:
+
+- `project` - name from `package.json`
+- `revisionKey` - The activated revision key
+- `previousRevisionKey` - The previous revision key
+
 ### Works well with
 
 - https://github.com/knownasilya/ember-cli-deploy-gcloud-storage
