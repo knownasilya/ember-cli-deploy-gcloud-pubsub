@@ -36,7 +36,7 @@ Contributing
 
 ### Installation
 
-* `git clone <repository-url>`
+* `git clone https://github.com/knownasilya/ember-cli-deploy-gcloud-pubsub`
 * `cd ember-cli-deploy-gcloud-pubsub`
 * `npm install`
 
