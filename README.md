@@ -4,14 +4,20 @@ ember-cli-deploy-gcloud-pubsub
 Notify that a deployment has been activated via Google PubSub.
 
 This is an alternative to the webhooks plugin, which doesn't work
-in a setup where the application is clustered.
+in a setup where the application is clustered and the cache is local to each instance of the application, like a `Map` instance.
+
+> Note: If you use Redis, the webhook addon should work for you, even if clustered. 
 
 Installation
 -------------
 
-```
+```sh
 ember install ember-cli-deploy-gcloud-pubsub
 ```
+
+Requires these other plugins:
+
+- 
 
 Usage
 -----
@@ -30,6 +36,10 @@ SETUP=true ember deploy alpha
 This will create a topic in PubSub which will be used for the subscription.
 
 3. Create a subscription for the topic
+
+### Works well with
+
+- https://github.com/mwpastore/ember-cli-deploy-sql
 
 Contributing
 ------------
