@@ -1,24 +1,38 @@
 ember-cli-deploy-gcloud-pubsub
-==============================================================================
+===============================
 
-[Short description of the addon.]
+Notify that a deployment has been activated via Google PubSub.
+
+This is an alternative to the webhooks plugin, which doesn't work
+in a setup where the application is clustered.
 
 Installation
-------------------------------------------------------------------------------
+-------------
 
 ```
 ember install ember-cli-deploy-gcloud-pubsub
 ```
 
-
 Usage
-------------------------------------------------------------------------------
+-----
 
-[Longer description of how to use the addon in apps.]
+### Setup PubSub
 
+1. Configure the plugin to access your PubSub account.
+2. Setup PubSub to accept notifications/send notifications
+
+To create a PubSub topic, run a deployment with the `SETUP` env var.
+
+```sh
+SETUP=true ember deploy alpha
+```
+
+This will create a topic in PubSub which will be used for the subscription.
+
+3. Create a subscription for the topic
 
 Contributing
-------------------------------------------------------------------------------
+------------
 
 ### Installation
 
@@ -45,6 +59,6 @@ Contributing
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
 License
-------------------------------------------------------------------------------
+-------
 
 This project is licensed under the [MIT License](LICENSE.md).
