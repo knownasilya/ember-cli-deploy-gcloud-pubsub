@@ -22,7 +22,10 @@ ember install ember-cli-deploy-gcloud-pubsub
 
 Requires these other plugins:
 
-- 
+- https://github.com/ember-cli-deploy/ember-cli-deploy
+- https://github.com/ember-cli-deploy/ember-cli-deploy-build
+- https://github.com/ember-cli-deploy/ember-cli-deploy-revision-data
+
 
 Usage
 -----
@@ -44,6 +47,7 @@ This will create a topic in PubSub which will be used for the subscription.
 
 ### Works well with
 
+- https://github.com/knownasilya/ember-cli-deploy-gcloud-storage
 - https://github.com/mwpastore/ember-cli-deploy-sql
 
 Contributing
