@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/knownasilya/ember-cli-deploy-gcloud-pubsub/compare/v0.1.1...v0.1.2) (2018-05-03)
+
+
+### Bug Fixes
+
+* update ember-cli deps via ember-cli-update ([89ee3cb](https://github.com/knownasilya/ember-cli-deploy-gcloud-pubsub/commit/89ee3cb))
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/knownasilya/ember-cli-deploy-gcloud-pubsub/compare/v0.1.0...v0.1.1) (2018-03-19)
 
