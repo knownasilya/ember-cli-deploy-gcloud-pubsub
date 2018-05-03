@@ -16,7 +16,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/knownasilya/ember-cli-deploy-gcloud-storage",
   "scripts": {
     "release": "standard-version",
     "build": "ember build",
