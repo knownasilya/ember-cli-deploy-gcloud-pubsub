@@ -37,10 +37,16 @@ module.exports = {
 
       setup: function (context) {
         let projectId = this.readConfig('projectId');
-
-        this.pubsub = new PubSub({
+        let credentials = this.readConfig('credentials');
+        let options = {
           projectId
-        });
+        };
+        
+        if (credentials) {
+          options.credentials = credentials;
+        }
+
+        this.pubsub = new PubSub(options);
       },
 
       didUpload: function(context) {
@@ -59,7 +65,6 @@ module.exports = {
           project: context.project.pkg.name
         });
         let dataBuffer = Buffer.from(data);
-
 
         return this.pubsub
           .topic(topicName)
