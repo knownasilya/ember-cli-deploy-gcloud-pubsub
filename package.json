@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deploy-gcloud-pubsub",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Notify that a deployment has been activated via Google PubSub.",
   "keywords": [
     "ember-addon",
