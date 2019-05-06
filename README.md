@@ -6,7 +6,6 @@ Notify that a deployment has been activated via Google PubSub.
 [![NPM][npm-badge-img]][npm-badge-link]
 [![Build Status][travis-badge]][travis-badge-url]
 [![Ember Observer Score][ember-observer-badge]][ember-observer-url]  
-[![Ember-CLI Deploy Version][ember-cli-deploy-badge]][ember-cli-deploy-url]
 
 This is an alternative to the webhooks plugin, which doesn't work
 in a setup where the application is clustered and the cache is local to each instance of the application, like a `Map` instance.
@@ -108,5 +107,3 @@ This project is licensed under the [MIT License](LICENSE.md).
 [travis-badge-url]: https://travis-ci.org/knownasilya/ember-cli-deploy-gcloud-pubsub
 [ember-observer-badge]: http://emberobserver.com/badges/ember-cli-deploy-gcloud-pubsub.svg
 [ember-observer-url]: http://emberobserver.com/addons/ember-cli-deploy-gcloud-pubsub
-[ember-cli-deploy-badge]: https://ember-cli-deploy.github.io/ember-cli-deploy-version-badges/plugins/ember-cli-deploy-gcloud-pubsub.svg
-[ember-cli-deploy-url]: http://ember-cli-deploy.github.io/ember-cli-deploy-version-badges/
